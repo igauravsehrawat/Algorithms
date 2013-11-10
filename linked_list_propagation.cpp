@@ -21,10 +21,16 @@ struct Node
 void Print(Node *head)
     
 {
-    Node* temp_g=head;
-    while(temp_g->next!=NULL){
-    cout << temp_g->data << endl;
-   temp_g=temp_g->next;}
+	Node* temp_g;
+	temp_g=NULL;
+	temp_g=head;
+	if(head == NULL){
+	}
+	else{
+  	  while(temp_g->next!=NULL){
+	    cout << temp_g->data << endl;
+	   temp_g=temp_g->next;}
+		cout << temp_g->data << endl;}
   // This is a "method-only" submission. 
   // You only need to complete this method. 
 }Node* Insert(Node *head,int x)
