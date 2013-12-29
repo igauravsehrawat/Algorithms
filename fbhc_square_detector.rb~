@@ -1,0 +1,32 @@
+def square_detector(some_string)
+  file_handle=some_string
+  file=IO.readLines(file_handle)
+  previous_line=nil
+  file.each{|line|
+    a=(/##/ =~ previous_line)
+    b=(/##/ =~ line)
+    if(a==b)
+      return "YES"
+      else
+      
+    end  
+      previous_line=line
+   }
+    return "NO"
+}
+end
+
+
+input=gets.to_i
+while(input>0)
+  lines=gets.to_i
+  f=File.new("fbhc_detector.txt","a+")
+  
+  while(b>0)
+    boxes=get.to_s
+    f.puts(boxes)
+     end
+  f.close
+  
+  puts square_detector("fbhc_detector.txt")
+end

@@ -44,18 +44,19 @@ for( vector<int>::iterator it=ar.begin();it!=ar.end();it++){
 		left_side->next=temp_left; //use pointers
 
 		left_side=left_side->next;
-		cout << left_side->data << " " << " " << endl;
+		cout << left_side->data << "left_side:" << " " << *it << "iterator value"  << endl;
 
 
 	}
-
+//cout ;
 	if(pivot->data < *it){
 		temp_right=new Node();
 		temp_right->data = *it;
 
 		right_side->data=temp_right->data;
 		right_side->next=temp_right; // this is binding game
-		right_side=right_side->next;
+		right_side=right_side->next; 
+		cout << right_side->data << "right_side" << " " << *it << "iterator value"  << endl; 
 
 	}
 
@@ -65,10 +66,10 @@ left_side->next=pivot;
 pivot->next=head_right;
 Node *print_list=new Node();	
 print_list=head_left;
-while(print_list->next!=NULL){
+while(print_list->next!=NULL){//reach the penultimatum node
 
 	cout << print_list->data << " " << print_list->next <<  endl;
-	print_list=print_list->next; //reach the penultimatum node
+	print_list=print_list->next; 
 }
 
 
