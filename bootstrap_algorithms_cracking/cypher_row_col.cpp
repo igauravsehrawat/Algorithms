@@ -20,11 +20,10 @@ for(int i=0;i<rows;i++){
 }
 
 
-//rows=matrix.length();
-//	cols= matrix[0].length();
-bool *rows_bool[new bool[rows]]={false};
-bool *cols_bool[new bool[cols]]={false};
-	for(int i=0;i<rows;i++){
+//rows=matrix.lengt
+//dynamic array..allocation	for(int i=0;i<rows;i++){
+
+
 		for(int j=0;j<cols;j++){
 			if(matrix[rows][cols]==0){
 				rows_bool[i]=true;
